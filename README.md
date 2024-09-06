@@ -1,2 +1,5 @@
 ![Screenshot from 2024-08-27 17-30-11](https://github.com/user-attachments/assets/ee04af81-5ac8-4440-911d-bef1e213716d)
 ![Floorplan](https://github.com/user-attachments/assets/ccf9a2ca-e45b-4ab4-a228-4805878e12eb)
+![Screenshot from 2024-09-01 16-35-14](https://github.com/user-attachments/assets/b5fd044e-1f79-4e58-a89e-60bc9e56aa99)
+![Screenshot from 2024-09-02 11-27-44](https://github.com/user-attachments/assets/cfe4b2b0-4f5b-4ef0-9138-621dfeab59fd)
+![Screenshot from 2024-09-02 11-28-52](https://github.com/user-attachments/assets/7cac0753-8f98-4eb7-b8ae-21c0bd84b310)
