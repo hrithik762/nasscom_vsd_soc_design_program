@@ -169,8 +169,9 @@ First, ensure that OpenLane is properly installed and that you have the necessar
   run_magic
   ````
 - This step involves running DRC (Design Rule Check), LVS (Layout vs. Schematic), and generating the final layout.
-  
-![Screenshot from 2024-08-22 17-41-01](https://github.com/user-attachments/assets/bbdc48bc-b228-4819-9db6-d7feaa73d3b9)
+
+ ![Screenshot from 2024-08-27 17-30-11](https://github.com/user-attachments/assets/f4414f8f-a006-4fa1-90c5-304c72fbf9ae)
+
 
 To run in interactive mode 
  command will be 
@@ -189,10 +190,8 @@ command for synthesis
 ```bash
  % run_synthesis 
 ```
+![Screenshot from 2024-08-29 21-40-07](https://github.com/user-attachments/assets/781bf431-4a81-438e-a29c-f7928c124902)
 
-![Screenshot from 2024-08-22 18-43-04](https://github.com/user-attachments/assets/3bb4b134-afdc-42f3-97bc-4bee082626d2)
-
-![Screenshot from 2024-08-22 18-43-17](https://github.com/user-attachments/assets/2c3ca1da-b5b9-4837-800e-2b750ac17aa7)
 ###### D Flip-Flop Ratio
 Now we will find the flip flop ratio
 ```bash
