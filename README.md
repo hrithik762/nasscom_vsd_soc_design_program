@@ -531,6 +531,7 @@ The CMOS (Complementary Metal-Oxide-Semiconductor) fabrication process is a comp
 ![Screenshot from 2024-09-02 11-38-09](https://github.com/user-attachments/assets/e85cfaba-a4bd-42f0-aafb-46596c24f054)
 ![Screenshot from 2024-09-02 11-44-57](https://github.com/user-attachments/assets/a7954e13-d3a9-4d60-bea8-d105f55290b4)
 
+![Screenshot from 2024-09-06 22-54-43](https://github.com/user-attachments/assets/460f6eef-b84d-4c15-b20f-eeda1d9b6413)
 
 #### 3. Extraction to spice format
 
