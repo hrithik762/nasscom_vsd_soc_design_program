@@ -531,25 +531,14 @@ The CMOS (Complementary Metal-Oxide-Semiconductor) fabrication process is a comp
 ![Screenshot from 2024-09-02 11-38-09](https://github.com/user-attachments/assets/e85cfaba-a4bd-42f0-aafb-46596c24f054)
 ![Screenshot from 2024-09-02 11-44-57](https://github.com/user-attachments/assets/a7954e13-d3a9-4d60-bea8-d105f55290b4)
 
+
+#### 3. spice tecgnology file, simulation and output graph
+
 ![Screenshot from 2024-09-06 22-54-43](https://github.com/user-attachments/assets/460f6eef-b84d-4c15-b20f-eeda1d9b6413)
-
-#### 3. Extraction to spice format
-
-
-![image](https://github.com/user-attachments/assets/664e5b09-9de2-45cd-9c47-59719359fb68)
-
-#### 4. spice tecgnology file, simulation and output graph
-
-
-![image](https://github.com/user-attachments/assets/8cde7b4e-a65d-469b-a0ca-32aa56679a7c)
-
-
-![image](https://github.com/user-attachments/assets/e83aca2a-edd4-4611-a076-da3400d4a5dd)
 
 
 updated tech file:
-
-![image](https://github.com/user-attachments/assets/88803377-45ca-47af-a96b-dd7d91d106c0)
+![Screenshot from 2024-09-02 15-42-43](https://github.com/user-attachments/assets/49d5d1ee-4c82-44f4-b042-557ef1c7777a)
 
 
 ## DAY -4 Pre Lay-out Timing Analysis and Importance of Good clock Tree
@@ -696,27 +685,13 @@ After the clock tree is synthesized, further optimization steps like Clock Tree 
 
 ### 4-LABs Steps:
 
-tracks.info 
-
-![image](https://github.com/user-attachments/assets/cbc67ad7-2dc2-4c1f-b585-a75854a9fecc)
-
 
 
 Inverter_mag
 ![Screenshot from 2024-09-02 11-45-27](https://github.com/user-attachments/assets/01074d98-b9cf-4e2f-8a5e-93187a215201)
 ![Screenshot from 2024-09-02 14-57-40](https://github.com/user-attachments/assets/6180c166-688f-4e88-adf9-9dbb083e8ff1)
 
-![image](https://github.com/user-attachments/assets/64f0f3bb-e069-498d-8684-19e8ee48f46b)
-
-copying the inverter lef to my design/src
-![image](https://github.com/user-attachments/assets/ec7e1d72-6e3e-4925-8b96-b1cac4e6066f)
-
-
-**config.tcl**
-![image](https://github.com/user-attachments/assets/87353d21-fd97-4cdd-922a-b10827f25042)
-
 **run_synthesis**
-![image](https://github.com/user-attachments/assets/32486db5-26dd-408c-89bd-c6fa3d93abab)
 ![Screenshot from 2024-09-06 22-18-53](https://github.com/user-attachments/assets/14e08fcc-2706-49e2-8975-615318b52953)
 
 
