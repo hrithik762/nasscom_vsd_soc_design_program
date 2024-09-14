@@ -10,7 +10,7 @@
 ### Overview Of QFN-48 Chip (PicoRV32 - A Size-Optimized RISC-V CPU)
 VSD Squadron Board: The VSD Board is shown below. Our focus is on the enclosed region containing the "Microprocessor (PicoRV32A-Cpu)," which will be designed using the RTL to GDS flow, progressing from the abstract design level to the fabrication stage.
 
-![Screenshot from 2024-08-27 17-30-11](https://github.com/user-attachments/assets/59b23bb8-9823-4087-863e-3d2570378eb6)
+![image](https://github.com/user-attachments/assets/844ea7fc-f4f4-4353-ae5d-d75a4507d075)
 
 
 ### Introduction to IC Design components and terminologies
