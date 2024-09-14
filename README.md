@@ -201,8 +201,6 @@ flop ratio =(total no. of d flop realised) / (total no. cells)
 ```
 
 
-![Screenshot from 2024-08-22 18-13-40](https://github.com/user-attachments/assets/a6be1ca5-842b-4431-a771-784ba144fc95)
-
 # Day - 2 Good Floorplan vs bad Floorplan and Introduction to library cells
 
 ## Utilization factor and Aspect ratio of a chip or die:
@@ -240,22 +238,10 @@ Decoupling capacitors are small-value capacitors placed between the power supply
 ```bash
 run_floorplan
 ```
-![Screenshot from 2024-08-30 21-50-33](https://github.com/user-attachments/assets/7c5ccc63-ce5e-4c6c-8729-c41e0280defb)
-
-![Screenshot from 2024-08-30 21-50-41](https://github.com/user-attachments/assets/33a247a0-b421-4293-ab8f-07d3bc7e0b3d)
-
-**Picorv32a floorplan def file:**
-
-
-![Screenshot from 2024-08-30 22-01-51](https://github.com/user-attachments/assets/00e525ea-022c-497c-99cc-4b920998e174)
-
-![Screenshot from 2024-08-30 21-59-56](https://github.com/user-attachments/assets/961be1a5-bba4-4001-b640-c6759e889625)
-
-
 
 **magic tool tech file and the layout of design:**
 
-![image](https://github.com/user-attachments/assets/6dca3660-2c4f-4a22-af12-54d79e50e14a)
+![Screenshot from 2024-08-29 21-40-07](https://github.com/user-attachments/assets/97936d6a-3509-473a-9be0-7250b8f8f7fa)
 
 
 **Centering the Design:**
@@ -301,10 +287,8 @@ Placement plays a crucial role in VLSI (Very Large Scale Integration) design. It
 
 ``` magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def & ```
 
-![Screenshot from 2024-08-26 18-04-15](https://github.com/user-attachments/assets/ee8746ed-8c5d-429f-a0b1-4f8b11288677)
-![Screenshot from 2024-08-26 18-11-42](https://github.com/user-attachments/assets/e8130182-c3f6-4658-8d2b-ad2b5f3b6385)
-![Screenshot from 2024-08-26 18-12-21](https://github.com/user-attachments/assets/590e4e06-9d00-45be-bbe2-59636d6a5f11)
-![Screenshot from 2024-08-26 18-16-10](https://github.com/user-attachments/assets/8051e35b-b5b8-43b1-9d4d-7a1f1dc5838a)
+![Screenshot from 2024-09-01 16-35-14](https://github.com/user-attachments/assets/44df245f-9b4c-4b60-beb8-9dcc6570f2c3)
+![Screenshot from 2024-09-02 11-27-44](https://github.com/user-attachments/assets/eff88027-4a09-48b7-ad8a-df27e618c016)
 
 ## CELL DESIGN AND CHARACETRIZATION FLOWS
 
@@ -539,17 +523,14 @@ The CMOS (Complementary Metal-Oxide-Semiconductor) fabrication process is a comp
 ### LABs Exercise
 
 #### 1. IoPlacer revision & adding the "set::env" command
+![Screenshot from 2024-09-02 11-28-52](https://github.com/user-attachments/assets/e4d7d5fa-cc19-4899-bb04-e8c4f77b70ec)
 
-![Screenshot from 2024-08-26 18-17-47 - 1](https://github.com/user-attachments/assets/504c7df1-f5b8-43c1-8a97-6417500c9818)
-
-here the the i/o pins are congested and overlapped:
-![Screenshot from 2024-08-29 17-40-03](https://github.com/user-attachments/assets/b753f254-58f2-4765-85a2-62cb961207a2)
 
 #### 2. Inverter layout in Magic tool
+![Screenshot from 2024-09-02 11-37-50](https://github.com/user-attachments/assets/406bb9df-1433-4e22-9e45-777b056dacda)
+![Screenshot from 2024-09-02 11-38-09](https://github.com/user-attachments/assets/e85cfaba-a4bd-42f0-aafb-46596c24f054)
+![Screenshot from 2024-09-02 11-44-57](https://github.com/user-attachments/assets/a7954e13-d3a9-4d60-bea8-d105f55290b4)
 
-![Screenshot from 2024-08-29 18-47-01](https://github.com/user-attachments/assets/8383d237-ac12-4b89-bafb-98c06054e61f)
-
-![Screenshot from 2024-08-29 18-54-02](https://github.com/user-attachments/assets/ea664cd7-cb07-442e-838b-e7f4ab867fb1)
 
 #### 3. Extraction to spice format
 
@@ -568,57 +549,6 @@ here the the i/o pins are congested and overlapped:
 updated tech file:
 
 ![image](https://github.com/user-attachments/assets/88803377-45ca-47af-a96b-dd7d91d106c0)
-
-
-#### 5. Parameters Calculation
-##### 5-a rise transition of of output: 20% of VDD to 80% of VDD
-rise_transition = (80% of 3.3v) - (20% of 3.3v)
-                = (x-coordinate pos. of 2.64v - x-coordinate pos. of 0.66v)
-                = (6.24247*e-19) - (6.61804*e-19)
-                = 0.06163 ns
-
-##### 5-b fall transition of of output: 80% of VDD to 20% of VDD
-fall_transition = (20% of 3.3v) - (80% of 3.3v)
-                = (x-coordinate pos. of 0.66v - x-coordinate pos. of 2.64v)
-                = (8.09409*e-19) - (8.05156*e-19)
-                = 0.04253 ns
-                
-   ![Screenshot from 2024-08-30 18-18-42](https://github.com/user-attachments/assets/7fc13cca-f173-40e0-8c3b-ac0d6a6858c8)
-
-                
- ##### 5-c cell rise delay: (50% of o/p rise) - (50% of i/p fall)
- cell_rise_delay= (x-coordinate pos. of 1.65v - x-coordinate pos. of 1.65v)
-                = (6.2089*e-19) - (6.15*e-19)
-                = 0.0589 ns
-                
-   ![Screenshot from 2024-08-30 18-24-04](https://github.com/user-attachments/assets/8f885539-8b54-4e08-b39b-6eb989749332)
-
- ##### 5-d cell fall delay: (50% of o/p fall) - (50% of i/p rise)
- cell_fall_delay= (x-coordinate pos. of 1.65v - x-coordinate pos. of 1.65v)
-                = (8.07657*e-19) - (8.05*e-19)
-                = 0.02657 ns
-                
-   ![Screenshot from 2024-08-30 18-26-33](https://github.com/user-attachments/assets/9636b765-cf0f-4b80-9bd0-c28927982734)
-
-
-   ##### 6. Introduction to Magic tool and DRC
-
-![Screenshot from 2024-08-30 23-22-53](https://github.com/user-attachments/assets/23ff1ac9-6b2f-440e-843b-77a82dc0635f)
-
-![Screenshot from 2024-08-30 23-37-07](https://github.com/user-attachments/assets/0c2c91cc-a865-477c-abdc-9c469bd7f1c7)
-
-![Screenshot from 2024-08-30 23-38-48](https://github.com/user-attachments/assets/6c03bc22-8909-492f-ad8d-6a04e9bc2516)
-
-![Screenshot from 2024-08-31 00-13-06](https://github.com/user-attachments/assets/e9368ab6-47cb-4a22-b284-549108f167b9)
-
-![Screenshot from 2024-08-31 00-22-14](https://github.com/user-attachments/assets/d3aa46d6-bbde-4273-b744-910a597e6f75)
-
-![Screenshot from 2024-08-31 00-27-51](https://github.com/user-attachments/assets/3eb2dc89-30be-4c20-a408-adec09a08a4b)
-
-![Screenshot from 2024-08-31 00-41-17](https://github.com/user-attachments/assets/6aa6b086-f3a1-4599-8aa3-f7cc21689653)
-
-
-
 
 
 ## DAY -4 Pre Lay-out Timing Analysis and Importance of Good clock Tree
@@ -766,15 +696,14 @@ After the clock tree is synthesized, further optimization steps like Clock Tree 
 ### 4-LABs Steps:
 
 tracks.info 
-![Screenshot from 2024-09-01 15-25-09](https://github.com/user-attachments/assets/3a412cc9-1e37-40b5-bec7-4e8fed3a55b3)
 
 ![image](https://github.com/user-attachments/assets/cbc67ad7-2dc2-4c1f-b585-a75854a9fecc)
 
 
 
 Inverter_mag
-![Screenshot from 2024-09-01 15-41-31](https://github.com/user-attachments/assets/9b3f5218-fdfa-4fb1-b810-a084c765da39)
-![Screenshot from 2024-09-01 15-51-50](https://github.com/user-attachments/assets/d5e6230f-b442-4d91-9899-878e348cc3b0)
+![Screenshot from 2024-09-02 11-45-27](https://github.com/user-attachments/assets/01074d98-b9cf-4e2f-8a5e-93187a215201)
+![Screenshot from 2024-09-02 14-57-40](https://github.com/user-attachments/assets/6180c166-688f-4e88-adf9-9dbb083e8ff1)
 
 ![image](https://github.com/user-attachments/assets/64f0f3bb-e069-498d-8684-19e8ee48f46b)
 
@@ -782,17 +711,14 @@ copying the inverter lef to my design/src
 ![image](https://github.com/user-attachments/assets/ec7e1d72-6e3e-4925-8b96-b1cac4e6066f)
 
 
-**lib file**
-![Screenshot from 2024-09-01 16-18-24](https://github.com/user-attachments/assets/cb294fc0-451a-4f43-9cc9-a137a1a7f700)
-
 **config.tcl**
 ![image](https://github.com/user-attachments/assets/87353d21-fd97-4cdd-922a-b10827f25042)
 
 **run_synthesis**
 ![image](https://github.com/user-attachments/assets/32486db5-26dd-408c-89bd-c6fa3d93abab)
+![Screenshot from 2024-09-06 22-18-53](https://github.com/user-attachments/assets/14e08fcc-2706-49e2-8975-615318b52953)
 
-![Screenshot from 2024-09-01 22-39-37](https://github.com/user-attachments/assets/38b4593b-fedd-4933-971a-d8d8adc6a5fe)
-![Screenshot from 2024-09-02 12-59-04](https://github.com/user-attachments/assets/26524dc2-860f-4336-840e-1b7c8ffb5a62)
+
 
 **run_floorplan**
 ```
@@ -803,48 +729,27 @@ run place_io
 tap_decap_or
 ```
 
-![image](https://github.com/user-attachments/assets/7a0ce107-ad01-47b4-b0ec-57d3ebc0361d)
-
-![image](https://github.com/user-attachments/assets/528d7c38-30ab-4345-9ebd-982182b316f0)
-
-
 **run_placement**
-![image](https://github.com/user-attachments/assets/bea91c36-88cd-467e-a999-a37aaa6f0dc2)
-
 
 
 **lay-out**
-![image](https://github.com/user-attachments/assets/c2c5b002-9736-44c8-a5aa-a9a7e3a7851d)
-
-![image](https://github.com/user-attachments/assets/89b85407-8dc4-4f3e-8abd-0599e1fc9540)
+![Screenshot from 2024-09-07 10-00-10](https://github.com/user-attachments/assets/c847a64a-5d24-4860-96e8-dcffcec959e6)
+![Screenshot from 2024-09-07 10-03-22](https://github.com/user-attachments/assets/78b13740-f099-4ef7-b623-90438e4c5311)
 
 **my_base.sdc**
-![Screenshot from 2024-09-02 23-52-01](https://github.com/user-attachments/assets/78fedd02-a835-4856-bd02-83fceb7bfe2b)
+![Screenshot from 2024-09-06 20-02-23](https://github.com/user-attachments/assets/2c58c641-3cc7-491d-86d7-5de4e56f9e34)
 
-**sta.conf**
-![Screenshot from 2024-09-02 23-52-20](https://github.com/user-attachments/assets/c5531bfa-1e00-4438-b2b6-9e2c90ea4210)
-![Screenshot from 2024-09-03 00-01-51](https://github.com/user-attachments/assets/43d4cd03-c20a-4e49-8562-b9e73c88674f)
 
 again run_synthesis, then floorplan, placement
-![image](https://github.com/user-attachments/assets/8b056129-156f-4197-b634-3343c0eba28a)
-
-![image](https://github.com/user-attachments/assets/b1516239-1970-4bb3-9a59-a7507e872403)
-
-**openroad**
-![image](https://github.com/user-attachments/assets/50d3d244-c1d0-4854-9123-27d29d2d535c)
+![Screenshot from 2024-09-07 09-44-28](https://github.com/user-attachments/assets/7c0b5756-d661-4877-9b67-7ae8290e260f)
 
 **CTS run**
-![image](https://github.com/user-attachments/assets/357f5032-3ff1-4a70-b706-9dfa645b22a6)
+![Screenshot from 2024-09-07 11-47-47](https://github.com/user-attachments/assets/0134c13a-1b9e-45af-9ffa-fdb918fe273d)
+![Screenshot from 2024-09-07 11-48-07](https://github.com/user-attachments/assets/52443a2f-c4b7-4ef5-a0b9-2900c574623a)
 
-![image](https://github.com/user-attachments/assets/25841ac2-fccd-4cb2-a0ec-f2d526785eda)
+![Screenshot from 2024-09-07 11-48-55](https://github.com/user-attachments/assets/143fa794-726f-437d-bd35-369c683023fd)
 
-![image](https://github.com/user-attachments/assets/19786d1f-3191-4691-a06f-d72d314bc3ca)
-
-![image](https://github.com/user-attachments/assets/b7ad1f6a-560b-411d-9b05-a7e66a024226)
-
-
-
-
+![Screenshot from 2024-09-14 10-00-51](https://github.com/user-attachments/assets/d73d48f4-e0a8-43a6-8c22-8e99519117b5)
 
 
 ## DAY -5 Final Steps for RTL2GDS Using TritonROUTE and openSTA
@@ -1109,19 +1014,15 @@ As an open-source project, TritonRoute benefits from community contributions and
 
 
 ### 6-Labs practise
+![Screenshot from 2024-09-14 10-42-19](https://github.com/user-attachments/assets/bbcf142a-ab8b-40db-852d-b62ee3ba2a05)
+![Screenshot from 2024-09-14 19-04-41](https://github.com/user-attachments/assets/8352c4b4-a687-43a1-8a95-8988bac2fa76)
+![Screenshot from 2024-09-14 19-22-07](https://github.com/user-attachments/assets/9a55574e-1e61-49a7-810e-9527d0f9a39d)
+![Screenshot from 2024-09-14 19-26-38](https://github.com/user-attachments/assets/b11a86fe-4152-4b1a-a231-fc7c4ab0a0c8)
+![Screenshot from 2024-09-14 19-26-58](https://github.com/user-attachments/assets/cc629f29-f6ef-4c14-bc49-a806c143ba18)
 
-![image](https://github.com/user-attachments/assets/d9d8a767-6d42-4a31-90fe-3e93f67ea96a)
+![Screenshot from 2024-09-14 19-27-52](https://github.com/user-attachments/assets/9ca1395b-e821-4ef1-8a35-6ef774973bb2)
+![Screenshot from 2024-09-14 19-27-55](https://github.com/user-attachments/assets/953bc79d-f5dc-445b-acfa-118ed09871af)
+![Screenshot from 2024-09-14 19-42-15](https://github.com/user-attachments/assets/9f88f521-10bd-4f32-9bf8-3c8a8e757b25)
 
-![image](https://github.com/user-attachments/assets/4c3995fe-c023-400a-bfb6-ab01bbf61210)
-
-![image](https://github.com/user-attachments/assets/c2e9894e-3c0b-4bf4-9978-112d1cee9ede)
-
-![image](https://github.com/user-attachments/assets/d93ff2ab-0233-483b-9783-83f8accf7113)
-
-![image](https://github.com/user-attachments/assets/9980d5ec-1ab7-43f0-80e3-8fef38460903)
-
-![Screenshot from 2024-09-03 18-46-05](https://github.com/user-attachments/assets/f77b7c53-b766-43df-a9b5-6c075f213df1)
-
-![Screenshot from 2024-09-03 18-53-51](https://github.com/user-attachments/assets/864261f9-9300-4300-ae0e-5be7a001a2c1)
 
 
