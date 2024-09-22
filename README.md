@@ -540,6 +540,16 @@ The CMOS (Complementary Metal-Oxide-Semiconductor) fabrication process is a comp
 updated tech file:
 ![Screenshot from 2024-09-02 15-42-43](https://github.com/user-attachments/assets/49d5d1ee-4c82-44f4-b042-557ef1c7777a)
 
+Introduction to Magic tool and DRC
+
+![Screenshot from 2024-08-30 23-22-53](https://github.com/user-attachments/assets/23ff1ac9-6b2f-440e-843b-77a82dc0635f)
+
+![Screenshot from 2024-08-30 23-37-07](https://github.com/user-attachments/assets/0c2c91cc-a865-477c-abdc-9c469bd7f1c7)
+
+![Screenshot from 2024-08-30 23-38-48](https://github.com/user-attachments/assets/6c03bc22-8909-492f-ad8d-6a04e9bc2516)
+
+![Screenshot from 2024-08-31 00-41-17](https://github.com/user-attachments/assets/6aa6b086-f3a1-4599-8aa3-f7cc21689653)
+
 
 ## DAY -4 Pre Lay-out Timing Analysis and Importance of Good clock Tree
 
