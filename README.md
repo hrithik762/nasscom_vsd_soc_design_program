@@ -540,7 +540,7 @@ The CMOS (Complementary Metal-Oxide-Semiconductor) fabrication process is a comp
 updated tech file:
 ![Screenshot from 2024-09-02 15-42-43](https://github.com/user-attachments/assets/49d5d1ee-4c82-44f4-b042-557ef1c7777a)
 
-Introduction to Magic tool and DRC
+Magic tool and DRC
 
 ![Screenshot from 2024-08-30 23-22-53](https://github.com/user-attachments/assets/23ff1ac9-6b2f-440e-843b-77a82dc0635f)
 
