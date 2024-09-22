@@ -548,8 +548,6 @@ Introduction to Magic tool and DRC
 
 ![Screenshot from 2024-08-30 23-38-48](https://github.com/user-attachments/assets/6c03bc22-8909-492f-ad8d-6a04e9bc2516)
 
-![Screenshot from 2024-08-31 00-41-17](https://github.com/user-attachments/assets/6aa6b086-f3a1-4599-8aa3-f7cc21689653)
-
 
 ## DAY -4 Pre Lay-out Timing Analysis and Importance of Good clock Tree
 
