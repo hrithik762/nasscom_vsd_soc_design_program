@@ -1,4 +1,4 @@
-# NASSCOM-VSD-PHYSICAL-DESIGN-SOC-DESIGN-PROGRAM
+# RISC-V Based PicoRV-32 CPU
 
 ## Table of Contents
 - [Day - 1 Introduction of Open-Source EDA, OpenLane and Sky130 PDK](#day---1-Introduction-of-Open-Source-EDA-OpenLane-and-Sky130-PDK)
